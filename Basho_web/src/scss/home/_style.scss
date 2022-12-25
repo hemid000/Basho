@@ -1,0 +1,518 @@
+body{
+  overflow-x: hidden;
+}
+.offcanvas{
+  display: flex;
+  flex-direction: row;
+  .modal_item{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    text-align: center;
+    transition: .3s ease-in-out;
+  padding: 20px;
+    @include _main($position:absolute , $top:0px , $right:0px , $width:100% ); 
+    background-color: white;
+    .modal_up{
+        width: 100%;
+        height: 100%;
+      @include _main($display:flex , $color:$main_color, $align_it:center , $just_content:space-between); 
+      padding-bottom: 5px;
+      .search{
+        width: 100%;
+        height: 90%;
+        #search_click{
+            width: 100%;
+            height: 90%;
+            padding: 9px;
+            border: none;
+            font-size: 47px;
+            color: black;
+            font-weight: 600;
+            &::placeholder{
+                font-size: 47px;
+                color: black;
+                font-weight: 600;
+            }
+        }
+      }
+    .icon_close_modal_like{
+      @include _main($display:flex , $align_it:center , $cursor:pointer ); 
+  .btn-class{
+    font-size: 22px;
+  }
+    }
+    }
+  }
+
+}
+#hero-content{
+  .sec_flex{
+    @include _main($display:flex  , $just_content:space-between);
+    flex-direction: column;
+        #head_line{
+        font-size: 78px;
+    font-weight: 350;
+ 
+
+    @media (max-width:1200px) {
+      font-size: 53px;
+    }
+    @media (max-width:1000px) {
+      font-size: 36px;  
+    }
+    @media (max-width:756px) {
+      font-size: 30px;
+    }
+}
+.subcribe{
+    @include _main($display:flex , $align_it:center ,);
+    padding: 45px 0 45px 0 ;
+    input{
+        padding: 22px 90px 22px 31px;
+    border: 1px solid transparent;
+    background-color: #ececec;
+    border-radius: 31px;
+    font-size: 20px;
+    &::placeholder{
+        font-size: 20px;
+    }
+    }
+    #sub_btn{
+        transition: .2s ease-in-out;
+        border: 1px solid transparent;
+        padding: 20px 60px 20px 60px;
+        border-radius: 31px;
+        margin-left: -110px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+
+        &:hover{
+            background-color: blue;
+        color: white;
+        }
+    }
+    span{
+        transition: .2s ease-in-out;
+        margin-left: 20px;
+        font-size: 15px;
+        width: 28%;
+        display: block;
+    }
+    @media (max-width:800px) {
+      display: none;
+      
+    }
+}
+  }
+
+}
+#cart_slider{
+  margin-top: 90px;
+  
+   .cart_slide_relative{
+   padding: 0 0 0 100px;
+        position: relative;
+     .swiper-button-next{
+      right: 11%;
+color: black;
+top: -40px;
+
+&::after{
+  font-size: 17px;
+}
+  }
+  .swiper-button-prev{
+left: auto;
+right: 20%;
+color: black;
+top: -40px; 
+
+&::after{
+  font-size: 17px;
+}
+  }
+.swiper{
+  position: static;
+}
+  .swiper-pagination{
+    display: none;
+  }
+  .cart{
+    @include _main($display:flex ,  );
+    flex-direction: column;
+    gap: 15px;
+    
+    .upside{
+
+      .img{
+        @include _main($position:relative ,$border-radius:30px, $width:100% , $height:475px , $cursor:pointer);
+        overflow: hidden;
+        margin-bottom: 10px;
+        transition: .3s ease-in-out;
+        img{
+          @include _main( $width:100% , $height:100% , $object_f:cover);
+  
+        }
+        .img_absol{
+
+          margin: 15px;
+          @include _main($position:absolute ,$border-radius:15px, $width:30px , $height:30px , $cursor:pointer , $bottom:16px , $left:23px);
+        img{
+          @include _main( $width:100% , $height:100% ,$border-radius:50%, $object_f:cover);
+         display: flex;
+         align-items: center;
+         justify-content: center; 
+                &:hover{
+          border: 5px solid white;
+        }
+        }
+
+        }
+      }
+    }
+
+    .middleside{   margin: 22px 0;
+      a{
+        text-decoration: none;
+        @include _main($padding:7px 8px, $border-radius:30px , $back-color:rgb(226, 226, 226), $color:black);
+      }
+    }
+    .downside{
+      a{
+        text-decoration: none;
+        color: black;
+        font-size: 31px;
+        font-weight: 650;
+        border-bottom:3px solid transparent ;
+        line-height: 45px;
+        &:hover{
+          border-bottom:3px solid black ;
+        }
+      }
+    }
+  
+  }
+  @media (max-width:2000px) {
+    padding: 0 0 0 292px;
+    
+  }
+  @media (max-width:1800px) {
+    padding: 0 0 0 182px;
+    
+  }
+  @media (max-width:1600px) {
+    padding: 0 0 0 90px;
+    
+  }
+  @media (max-width:900px) {
+    padding: 0 0 0 0;
+    
+  }
+}
+  }
+#carts_full{
+  margin-top: 90px;
+  .upside{
+      h2{
+    font-size: 60px;
+    line-height: 1.3;
+    font-weight: 350;
+    @media (max-width:1000px) {
+      font-size: 31px
+      
+    }
+ 
+  }
+  .icons{
+    @include _main($display:flex , $just_content:end , $align_it:center);
+    .img{
+      width: 100px;
+      height: 100px;
+  img{
+    @include _main( $border-radius:42px, $width:84px , $height:84px , $cursor:pointer );
+    transition: .3s ease-in-out;
+ 
+    &:hover{
+        transform: translateY(-8px);
+      }
+  }
+  @media (max-width:525px) {
+    width: 67px;
+    height: 70px;
+  }
+  }
+    .img2{
+      width: 100px;
+      height: 100px;
+      transform: translateX(-30px);
+  img{
+    @include _main( $border-radius:42px, $width:84px , $height:84px , $cursor:pointer );
+    transition: .3s ease-in-out;
+ 
+    &:hover{
+        transform: translateY(-8px);
+      }
+  }
+  @media (max-width:525px) {
+    width: 67px;
+    height: 70px;
+    
+  }
+  }
+    .img3{
+      width: 100px;
+      height: 100px;
+      transform: translateX(-60px);
+  img{
+    @include _main( $border-radius:42px, $width:84px , $height:84px , $cursor:pointer );
+    transition: .3s ease-in-out;
+ 
+    &:hover{
+        transform: translateY(-8px);
+      }
+  }
+  @media (max-width:525px) {
+    width: 67px;
+    height: 70px;
+    
+  }
+  }
+    .img4{
+      width: 100px;
+      height: 100px;
+      transform: translateX(-90px);
+
+  img{
+    @include _main( $border-radius:42px, $width:84px , $height:84px , $cursor:pointer );
+    transition: .3s ease-in-out;
+ 
+    &:hover{
+        transform: translateY(-8px);
+      }
+  }
+  @media (max-width:525px) {
+    width: 67px;
+    height: 70px;
+    
+  }
+  }
+    .img5{
+      width: 100px;
+      height: 100px;
+      transform: translateX(-120px);
+
+  img{
+    @include _main( $border-radius:42px, $width:84px , $height:84px , $cursor:pointer );
+    transition: .3s ease-in-out;
+ 
+    &:hover{
+        transform: translateY(-8px);
+      }
+  }
+  @media (max-width:525px) {
+    width: 67px;
+    height: 70px;
+    
+  }
+  }
+
+  }
+  }
+
+  .downfi{
+    .cart{
+      @include _main($display:flex , $width:100% , $margin:20px 0 0 0   );
+      flex-direction: column;
+      gap: 15px;
+      
+      .upside{
+  
+        .img{
+          transition: .3s ease-in-out;
+          @include _main($position:relative ,$border-radius:30px, $height:475px , $cursor:pointer);
+          overflow: hidden;
+          img{
+            @include _main( $width:100% , $height:100% , $object_f:cover);
+    
+          }
+          .img_absol{
+            @include _main($position:absolute ,$border-radius:15px, $width:30px , $height:30px , $cursor:pointer , $bottom:16px , $left:23px);
+          img{
+            @include _main( $width:100% , $height:100% ,$border-radius:50%, $object_f:cover);
+  
+          }
+          }
+          &:hover{
+            transform: translateY(-8px);
+          }
+        }
+      }
+  
+      .middleside{
+        a{
+          text-decoration: none;
+          @include _main($padding:7px 8px, $border-radius:30px , $back-color:rgb(226, 226, 226), $color:black);
+        }
+      }
+      .downside{
+        a{
+          text-decoration: none;
+          color: black;
+          font-size: 31px;
+          font-weight: 650;
+          border-bottom:3px solid transparent ;
+          line-height: 45px;
+          &:hover{
+            border-bottom:3px solid black ;
+          }
+        }
+      }
+    
+    }
+.load_center{
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  a{
+    text-decoration: none;
+    padding: 16px 25px;
+    background-color: black;
+    color: white;
+    border-radius: 34px;
+    font-size: 20px;
+    transition: .3s ease-in-out;
+
+    &:hover{
+      background-color: blue;
+    }
+
+
+  }
+}
+  }
+  .downfi_load{
+    display: none;
+    .cart{
+      @include _main($display:flex , $width:100% , $margin:20px 0 0 0   );
+      flex-direction: column;
+      gap: 15px;
+      
+      .upside{
+  
+        .img{
+          transition: .3s ease-in-out;
+          @include _main($position:relative ,$border-radius:30px, $height:475px , $cursor:pointer);
+          overflow: hidden;
+          img{
+            @include _main( $width:100% , $height:100% , $object_f:cover);
+    
+          }
+          .img_absol{
+            @include _main($position:absolute ,$border-radius:15px, $width:30px , $height:30px , $cursor:pointer , $bottom:16px , $left:23px);
+          img{
+            @include _main( $width:100% , $height:100% ,$border-radius:50%, $object_f:cover);
+  
+          }
+          }
+          &:hover{
+            transform: translateY(-8px);
+          }
+        }
+      }
+  
+      .middleside{
+        a{
+          text-decoration: none;
+          @include _main($padding:7px 8px, $border-radius:30px , $back-color:rgb(226, 226, 226), $color:black);
+        }
+      }
+      .downside{
+        h3{
+              a{
+       
+          text-decoration: none;
+          color: black;
+          font-size: 31px;
+          font-weight: 650;
+          border-bottom:3px solid transparent ;
+          line-height: 45px;
+          &:hover{
+            border-bottom:3px solid black ;
+          }
+     
+        }
+        @media (max-width:500px) {
+          font-size: 25px ;
+          
+        }
+        }
+    
+      }
+    
+    }
+    .load_center{
+      margin-top: 30px;
+      width: 100%;
+      text-align: center;
+      a{
+        text-decoration: none;
+        padding: 16px 25px;
+        background-color: black;
+        color: white;
+        border-radius: 34px;
+        font-size: 20px;
+        transition: .3s ease-in-out;
+    
+        &:hover{
+          background-color: blue;
+        }
+        @media (max-width:500px) {
+          font-size: 25px ;
+          
+        }
+    
+      }
+    }
+  }
+
+}
+
+#overview_carts{
+  margin-top: 90px;
+  .cart{
+    @include _main($display:flex , $width:100% , $margin:20px 0 0 0   );
+    flex-direction: column;
+    gap: 15px;
+    
+    .upside{
+
+      .img{
+        transition: .3s ease-in-out;
+        @include _main($position:relative ,$border-radius:30px, $width:100% , $height:250px , $cursor:pointer);
+        overflow: hidden;
+        img{
+          @include _main( $width:100% , $height:100% , $object_f:cover);
+  
+        }
+        &:hover{
+          transform: translateY(-8px);
+        }
+      }
+    }
+    .downside{
+      a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: 650;
+        border-bottom:3px solid transparent ;
+        &:hover{
+          border-bottom:3px solid black ;
+        }
+      }
+    }
+  
+  }
+}

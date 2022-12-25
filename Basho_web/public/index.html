@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basho</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../src/scss/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="nav1">
+        <div class="nav_menu">
+          <div class="container mt-3">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="img">
+                  <img
+                    src="https://basho.fueko.net/content/images/2022/01/basho.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <div class="right_side">
+                  <ul>
+                    <li><a href="#">Demos</a></li>
+                    <li><a href="#">Style Guide</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li id="click_list">
+                      <i class="bi bi-chevron-down"></i>
+                      <div class="list">
+                        <ul id="list_nav">
+                          <li><a href="#">Features</a></li>
+                          <li><a href="#">Tags</a></li>
+                          <li><a href="http://127.0.0.1:5500/public/authors.html">Authors</a></li>
+                          <li><a href="http://127.0.0.1:5500/public/subcribe.html">Subcribe</a></li>
+                          <li><a href="http://127.0.0.1:5500/public/contact.html">Contact</a></li>
+                          <li><a href="#">Get Theme</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="sea_join">
+                    <a
+                      href="#"
+                      id="search"
+                      class="btn btn-primary"
+                      type="button"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasTop"
+                      aria-controls="offcanvasTop"
+                      ><i class="bi bi-search"></i> Search
+                    </a>
+
+                    <a href="#" id="join">Join</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+        <nav id="nav2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="nav_side">
+                <div class="img">
+                  <img
+                    src="https://basho.fueko.net/content/images/2022/01/basho.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="sea_join">
+                  <a
+                    href="#"
+                    id="search"
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasTop"
+                    aria-controls="offcanvasTop"
+                    ><i class="bi bi-search"></i> Search
+                  </a>
+                </div>
+                <div class="click_x">
+                  <span id="first"></span>
+                  <span id="second"></span>
+                  <span id="third"></span>
+
+                  <div class="list">
+                    <ul>
+                      <li><a href="#">Features</a></li>
+                      <li><a href="#">Tags</a></li>
+                      <li><a href="http://127.0.0.1:5500/public/authors.html">Authors</a></li>
+                      <li><a href="http://127.0.0.1:5500/public/subcribe.html">Subcribe</a></li>
+                      <li><a href="http://127.0.0.1:5500/public/contact.html">Contact</a></li>
+                      <li><a href="#">Get Theme</a></li>
+                      <li><a href="#">Demos</a></li>
+                      <li><a href="#">Style Guide</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+    <main>
+      <section id="modal_like">
+        <div
+          class="offcanvas offcanvas-top"
+          tabindex="-1"
+          id="offcanvasTop"
+          aria-labelledby="offcanvasTopLabel"
+        >
+          <div class="offcanvas-body">
+            <div class="modal_item">
+              <div class="modal_up">
+                <div class="search">
+                  <input
+                    type="text"
+                    name=""
+                    id="search_click"
+                    placeholder="Search"
+                  />
+                </div>
+                <div class="icon_close_modal_like">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hero-content">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="sec_flex">
+                <h2 id="head_line">
+                  <strong> Hey, we’re Basho.</strong> See our thoughts, stories
+                  and ideas.
+                </h2>
+
+                <div class="subcribe">
+                  <form action="">
+                    <label for="username"></label>
+                    <input
+                      type="text"
+                      id="Sub_text"
+                      name="Sub_text"
+                      placeholder="Your email address"
+                      required
+                    />
+                    <input type="submit" id="sub_btn" value="Subcribe" />
+                  </form>
+                  <span id="span_trans">
+                    Get the email newsletter and unlock access to members-only
+                    content and updates
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cart_slider">
+        <div class="container-fluid cart_slide_relative">
+          <div class="swiper cart_slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="cart">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="upside">
+                        <div class="img">
+                          <img
+                            src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1559650656-5d1d361ad10e.jpeg"
+                            alt=""
+                          />
+                          <div class="img_absol">
+                            <img
+                              src="https://basho.fueko.net/content/images/size/w300/2022/03/good-faces-onKIR2oTW0o-unsplash.jpg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="middleside">
+                        <a href="#">People</a>
+                        <a href="#">Story</a>
+                      </div>
+
+                      <div class="downside">
+                        <h3>
+                          <a href="#">Everyone has a different life story</a>
+                        </h3>
+                        <p>
+                          Non est igitur summum malum dolor. Tu autem inter haec
+                          tantam multitudinem hominum interiectam non vides nec
+                          laetantium nec dolentium. Nunc vero a primo quidem est
+                          nec...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cart">
+                  <div class="col-lg-12">
+                    <div class="upside">
+                      <div class="img">
+                        <img
+                          src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1581368129682-e2d66324045b.jpeg"
+                          alt=""
+                        />
+                        <div class="img_absol">
+                          <img
+                            src="https://basho.fueko.net/content/images/size/w300/2022/03/joshua-oyebanji-kMC1v6rBHMI-unsplash-2.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="middleside">
+                      <a href="#">People</a>
+                      <a href="#">Story</a>
+                    </div>
+
+                    <div class="downside">
+                      <h3>
+                        <a href="#">Everyone has a different life story</a>
+                      </h3>
+                      <p>
+                        Non est igitur summum malum dolor. Tu autem inter haec
+                        tantam multitudinem hominum interiectam non vides nec
+                        laetantium nec dolentium. Nunc vero a primo quidem est
+                        nec...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cart">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="upside">
+                        <div class="img">
+                          <img
+                            src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1603808033176-9d134e6f2c74.jpeg"
+                            alt=""
+                          />
+                          <div class="img_absol">
+                            <img
+                              src="https://basho.fueko.net/content/images/size/w300/2022/03/good-faces-onKIR2oTW0o-unsplash.jpg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="middleside">
+                        <a href="#">People</a>
+                        <a href="#">Story</a>
+                      </div>
+
+                      <div class="downside">
+                        <h3>
+                          <a href="#">Everyone has a different life story</a>
+                        </h3>
+                        <p>
+                          Non est igitur summum malum dolor. Tu autem inter haec
+                          tantam multitudinem hominum interiectam non vides nec
+                          laetantium nec dolentium. Nunc vero a primo quidem est
+                          nec...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cart">
+                  <div class="col-lg-12">
+                    <div class="upside">
+                      <div class="img">
+                        <img
+                          src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1638675039591-c7b3d1bbbd74.jpeg"
+                          alt=""
+                        />
+                        <div class="img_absol">
+                          <img
+                            src="https://basho.fueko.net/content/images/size/w300/2022/03/joshua-oyebanji-kMC1v6rBHMI-unsplash-2.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="middleside">
+                      <a href="#">People</a>
+                      <a href="#">Story</a>
+                    </div>
+
+                    <div class="downside">
+                      <h3>
+                        <a href="#">Everyone has a different life story</a>
+                      </h3>
+                      <p>
+                        Non est igitur summum malum dolor. Tu autem inter haec
+                        tantam multitudinem hominum interiectam non vides nec
+                        laetantium nec dolentium. Nunc vero a primo quidem est
+                        nec...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cart">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="upside">
+                        <div class="img">
+                          <img
+                            src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1603015268928-a9f7b3edaf27.jpeg"
+                            alt=""
+                          />
+                          <div class="img_absol">
+                            <img
+                              src="https://basho.fueko.net/content/images/size/w300/2022/03/good-faces-onKIR2oTW0o-unsplash.jpg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="middleside">
+                        <a href="#">People</a>
+                        <a href="#">Story</a>
+                      </div>
+
+                      <div class="downside">
+                        <h3>
+                          <a href="#">Everyone has a different life story</a>
+                        </h3>
+                        <p>
+                          Non est igitur summum malum dolor. Tu autem inter haec
+                          tantam multitudinem hominum interiectam non vides nec
+                          laetantium nec dolentium. Nunc vero a primo quidem est
+                          nec...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cart">
+                  <div class="col-lg-12">
+                    <div class="upside">
+                      <div class="img">
+                        <img
+                          src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1597214844654-01d9d941e0fa.jpeg"
+                          alt=""
+                        />
+                        <div class="img_absol">
+                          <img
+                            src="https://basho.fueko.net/content/images/size/w300/2022/03/joshua-oyebanji-kMC1v6rBHMI-unsplash-2.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="middleside">
+                      <a href="#">People</a>
+                      <a href="#">Story</a>
+                    </div>
+
+                    <div class="downside">
+                      <h3>
+                        <a href="#">Everyone has a different life story</a>
+                      </h3>
+                      <p>
+                        Non est igitur summum malum dolor. Tu autem inter haec
+                        tantam multitudinem hominum interiectam non vides nec
+                        laetantium nec dolentium. Nunc vero a primo quidem est
+                        nec...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="carts_full">
+        <div class="upside">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h2>
+                  See what we’ve
+                  <strong> written lately</strong>
+                </h2>
+              </div>
+              <div class="col-lg-6">
+                <div class="icons">
+                  <div class="img">
+                    <img
+                      src="https://basho.fueko.net/content/images/size/w300/2022/03/alison-erickson-Zt8IkNfhk54-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="img2">
+                    <img
+                      src="https://basho.fueko.net/content/images/size/w300/2022/03/seth-doyle-wys9Jty8wNQ-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="img3">
+                    <img
+                      src="https://basho.fueko.net/content/images/size/w300/2022/03/kazi-mizan-ItjRqGiei5g-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="img4">
+                    <img
+                      src="https://basho.fueko.net/content/images/size/w300/2022/03/joshua-oyebanji-kMC1v6rBHMI-unsplash-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="img5">
+                    <img
+                      src="https://basho.fueko.net/content/images/size/w300/2022/03/good-faces-onKIR2oTW0o-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="downfi">
+          <div class="container">
+            <div class="row g-3">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1559650656-5d1d361ad10e.jpeg"
+                        alt=""
+                      />
+                      <div class="img_absol">
+                        <img
+                          src="https://basho.fueko.net/content/images/size/w300/2022/03/good-faces-onKIR2oTW0o-unsplash.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middleside">
+                    <a href="#">People</a>
+                    <a href="#">Story</a>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#">Everyone has a different life story</a>
+                    </h3>
+                    <p>
+                      Non est igitur summum malum dolor. Tu autem inter haec
+                      tantam multitudinem hominum interiectam non vides nec
+                      laetantium nec dolentium. Nunc vero a primo quidem est
+                      nec...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1581368129682-e2d66324045b.jpeg"
+                        alt=""
+                      />
+                      <div class="img_absol">
+                        <img
+                          src="https://basho.fueko.net/content/images/size/w300/2022/03/joshua-oyebanji-kMC1v6rBHMI-unsplash-2.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middleside">
+                    <a href="#">People</a>
+                    <a href="#">Story</a>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#">Everyone has a different life story</a>
+                    </h3>
+                    <p>
+                      Non est igitur summum malum dolor. Tu autem inter haec
+                      tantam multitudinem hominum interiectam non vides nec
+                      laetantium nec dolentium. Nunc vero a primo quidem est
+                      nec...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1603808033176-9d134e6f2c74.jpeg"
+                        alt=""
+                      />
+                      <div class="img_absol">
+                        <img
+                          src="https://basho.fueko.net/content/images/size/w300/2022/03/alison-erickson-Zt8IkNfhk54-unsplash.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middleside">
+                    <a href="#">People</a>
+                    <a href="#">Story</a>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#">Everyone has a different life story</a>
+                    </h3>
+                    <p>
+                      Non est igitur summum malum dolor. Tu autem inter haec
+                      tantam multitudinem hominum interiectam non vides nec
+                      laetantium nec dolentium. Nunc vero a primo quidem est
+                      nec...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1638675039591-c7b3d1bbbd74.jpeg"
+                        alt=""
+                      />
+                      <div class="img_absol">
+                        <img
+                          src="https://basho.fueko.net/content/images/size/w300/2022/03/kazi-mizan-ItjRqGiei5g-unsplash.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middleside">
+                    <a href="#">People</a>
+                    <a href="#">Story</a>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#">Everyone has a different life story</a>
+                    </h3>
+                    <p>
+                      Non est igitur summum malum dolor. Tu autem inter haec
+                      tantam multitudinem hominum interiectam non vides nec
+                      laetantium nec dolentium. Nunc vero a primo quidem est
+                      nec...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1603015268928-a9f7b3edaf27.jpeg"
+                        alt=""
+                      />
+                      <div class="img_absol">
+                        <img
+                          src="https://basho.fueko.net/content/images/size/w300/2022/03/matheus-ferrero-dlYiklmLIGg-unsplash.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middleside">
+                    <a href="#">People</a>
+                    <a href="#">Story</a>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#">Everyone has a different life story</a>
+                    </h3>
+                    <p>
+                      Non est igitur summum malum dolor. Tu autem inter haec
+                      tantam multitudinem hominum interiectam non vides nec
+                      laetantium nec dolentium. Nunc vero a primo quidem est
+                      nec...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1597214844654-01d9d941e0fa.jpeg"
+                        alt=""
+                      />
+                      <div class="img_absol">
+                        <img
+                          src="https://basho.fueko.net/content/images/size/w300/2022/03/joshua-oyebanji-kMC1v6rBHMI-unsplash-2.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middleside">
+                    <a href="#">People</a>
+                    <a href="#">Story</a>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#">Everyone has a different life story</a>
+                    </h3>
+                    <p>
+                      Non est igitur summum malum dolor. Tu autem inter haec
+                      tantam multitudinem hominum interiectam non vides nec
+                      laetantium nec dolentium. Nunc vero a primo quidem est
+                      nec...
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="load_center">
+                <a href="#" id="load_carts">Load More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="downfi_load">
+          <div class="container">
+            <div class="row g-3">
+              <div class="col-lg-4">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1559650656-5d1d361ad10e.jpeg"
+                        alt=""
+                      />
+                      <div class="img_absol">
+                        <img
+                          src="https://basho.fueko.net/content/images/size/w300/2022/03/good-faces-onKIR2oTW0o-unsplash.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middleside">
+                    <a href="#">People</a>
+                    <a href="#">Story</a>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#">Everyone has a different life story</a>
+                    </h3>
+                    <p>
+                      Non est igitur summum malum dolor. Tu autem inter haec
+                      tantam multitudinem hominum interiectam non vides nec
+                      laetantium nec dolentium. Nunc vero a primo quidem est
+                      nec...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1581368129682-e2d66324045b.jpeg"
+                        alt=""
+                      />
+                      <div class="img_absol">
+                        <img
+                          src="https://basho.fueko.net/content/images/size/w300/2022/03/joshua-oyebanji-kMC1v6rBHMI-unsplash-2.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middleside">
+                    <a href="#">People</a>
+                    <a href="#">Story</a>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#">Everyone has a different life story</a>
+                    </h3>
+                    <p>
+                      Non est igitur summum malum dolor. Tu autem inter haec
+                      tantam multitudinem hominum interiectam non vides nec
+                      laetantium nec dolentium. Nunc vero a primo quidem est
+                      nec...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1603808033176-9d134e6f2c74.jpeg"
+                        alt=""
+                      />
+                      <div class="img_absol">
+                        <img
+                          src="https://basho.fueko.net/content/images/size/w300/2022/03/alison-erickson-Zt8IkNfhk54-unsplash.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middleside">
+                    <a href="#">People</a>
+                    <a href="#">Story</a>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#">Everyone has a different life story</a>
+                    </h3>
+                    <p>
+                      Non est igitur summum malum dolor. Tu autem inter haec
+                      tantam multitudinem hominum interiectam non vides nec
+                      laetantium nec dolentium. Nunc vero a primo quidem est
+                      nec...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1638675039591-c7b3d1bbbd74.jpeg"
+                        alt=""
+                      />
+                      <div class="img_absol">
+                        <img
+                          src="https://basho.fueko.net/content/images/size/w300/2022/03/kazi-mizan-ItjRqGiei5g-unsplash.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middleside">
+                    <a href="#">People</a>
+                    <a href="#">Story</a>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#">Everyone has a different life story</a>
+                    </h3>
+                    <p>
+                      Non est igitur summum malum dolor. Tu autem inter haec
+                      tantam multitudinem hominum interiectam non vides nec
+                      laetantium nec dolentium. Nunc vero a primo quidem est
+                      nec...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1603015268928-a9f7b3edaf27.jpeg"
+                        alt=""
+                      />
+                      <div class="img_absol">
+                        <img
+                          src="https://basho.fueko.net/content/images/size/w300/2022/03/matheus-ferrero-dlYiklmLIGg-unsplash.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middleside">
+                    <a href="#">People</a>
+                    <a href="#">Story</a>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#">Everyone has a different life story</a>
+                    </h3>
+                    <p>
+                      Non est igitur summum malum dolor. Tu autem inter haec
+                      tantam multitudinem hominum interiectam non vides nec
+                      laetantium nec dolentium. Nunc vero a primo quidem est
+                      nec...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1597214844654-01d9d941e0fa.jpeg"
+                        alt=""
+                      />
+                      <div class="img_absol">
+                        <img
+                          src="https://basho.fueko.net/content/images/size/w300/2022/03/joshua-oyebanji-kMC1v6rBHMI-unsplash-2.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middleside">
+                    <a href="#">People</a>
+                    <a href="#">Story</a>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#">Everyone has a different life story</a>
+                    </h3>
+                    <p>
+                      Non est igitur summum malum dolor. Tu autem inter haec
+                      tantam multitudinem hominum interiectam non vides nec
+                      laetantium nec dolentium. Nunc vero a primo quidem est
+                      nec...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="overview_carts">
+        <div class="upside">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h3>Recommended</h3>
+              </div>
+              <div class="col-lg-6"></div>
+            </div>
+          </div>
+        </div>
+        <div class="downside">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w1200/2022/03/photo-1597214844654-01d9d941e0fa.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#">Change your look and your attitude</a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w600/2022/03/photo-1644478509397-27d9b27771fe.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#"
+                        >Every day, in every city and town across the country</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w600/2022/03/photo-1593259037198-c720f4420d7f.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#"
+                        >I work best when my space is filled with inspiration</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w600/2022/03/photo-1609405979808-08669e982546.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#">I have my own definition of minimalism</a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w600/2022/03/photo-1615782706112-e4fe47b56c24.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#">Everyone has a different life story</a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="cart">
+                  <div class="upside">
+                    <div class="img">
+                      <img
+                        src="https://basho.fueko.net/content/images/size/w600/2022/03/photo-1603015268928-a9f7b3edaf27.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="downside">
+                    <h3>
+                      <a href="#"
+                        >The trick to getting more done is to have the freedom
+                        to roam around</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="foot">
+      <div class="upside">
+        <div class="container border_x">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 id="h2_click">Subscribe to <strong>new posts</strong></h2>
+            </div>
+            <div class="col-lg-6">
+              <div class="form">
+                <form action="">
+                  <label for="username"></label>
+                  <input
+                    type="text"
+                    id="Sub_text"
+                    name="Sub_text"
+                    placeholder="Your email address"
+                    required
+                  />
+                  <input type="submit" id="sub_btn" value="Subcribe" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="downside">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="img">
+                <img
+                  src="https://basho.fueko.net/content/images/2022/01/basho.svg"
+                  alt=""
+                />
+              </div>
+              <p>
+                A minimal, functional theme for running a paid-membership
+                publication on Ghost.
+              </p>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-lg-3 col-6 col-sm-6">
+                  <p>Social</p>
+                  <ul>
+                    <li>
+                      <i class="bi bi-facebook"></i><a href="#">Facebook</a>
+                    </li>
+                    <li>
+                      <i class="bi bi-twitter"></i><a href="#">Twitter</a>
+                    </li>
+                    <li>
+                      <i class="bi bi-youtube"></i><a href="#">Youtube</a>
+                    </li>
+                    <li>
+                      <i class="bi bi-snapchat"></i><a href="#">Snapchat</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-6 col-sm-6">
+                  <p>About</p>
+                  <ul>
+                    <li><a href="#">Style Guide</a></li>
+                    <li><a href="#">Features </a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">404 </a></li>
+                    <li><a href="#">Get Theme</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-6 col-sm-6">
+                  <p>Features</p>
+                  <ul>
+                    <li><a href="#">Demos </a></li>
+                    <li><a href="#">Light version</a></li>
+                    <li><a href="#">Color version</a></li>
+                    <li><a href="#">Partial version</a></li>
+                    <li><a href="#">Dark version</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-6 col-sm-6">
+                  <p>Membership</p>
+                  <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Subscribe</a></li>
+                    <li><a href="#">Tags</a></li>
+                    <li><a href="#">Tags</a></li>
+                    <li><a href="#">Authors</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <p id="last_p">© Basho 2022. Published with Ghost and Basho.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../src/js/app.js"></script>
+  </body>
+</html>

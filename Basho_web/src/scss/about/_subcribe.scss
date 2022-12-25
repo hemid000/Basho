@@ -1,0 +1,91 @@
+#subcribe{
+  .img{
+width: 100%;
+height: 100vh;
+img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+@media (max-width:1010px) {
+    display: none;
+    
+}
+}  
+.col-lg-9{  
+      @include _main($display:flex , $align_it:center , $just_content:center);
+    .sub_field{
+        width: 70%;
+    @include _main($display:flex ,  $just_content:center);
+    flex-direction: column;
+
+    .img2{
+        width: 148px;
+        height: 40px;
+        img{
+            width: 148px;
+            height: 40px;
+            object-fit: contain;
+        }
+        margin-bottom: 50px;
+
+
+    }
+h2{
+    font-size: 47px;
+    font-weight: 650;
+    margin-bottom: 27px;
+}
+form{
+  input{
+    width: 70%;
+    outline: none;
+    border: none;
+    padding: 20px 14px 20px 14px;
+    background-color: rgb(233, 233, 233);
+    margin-bottom: 18px;
+    border-radius: 30px;
+    @media (max-width:400px) {
+        width: 90% !important;
+        
+    }
+    @media (max-width:600px) {
+        width: 90% !important;
+        
+    }
+}
+input[type=submit]{
+    width: 36%;
+    outline: none;
+    border: none;
+    padding: 18px 14px 18px 14px;
+    background-color: black;
+    color: white;
+    margin-bottom: 18px;
+    margin-top: 15px;
+    border-radius: 30px;
+    transition: .3s ease-in-out;
+
+    &:hover{
+        background-color: blue;
+    }
+    @media (max-width:400px) {
+        width: 60%;
+        
+    }
+    @media (max-width:600px) {
+        width: 50% !important;
+        
+    }
+}  
+}
+
+@media (max-width:1010px) {
+    margin-top: 60px;
+    
+}
+}
+}
+
+}
+

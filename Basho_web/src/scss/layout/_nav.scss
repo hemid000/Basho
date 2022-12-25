@@ -1,0 +1,169 @@
+#nav1{
+    .nav_menu{
+        .img{
+            @include _main($width:100% , $height:40px);
+            img{
+                @include _main($width:148px , $height:100% ,$object_f:cover , $cursor:pointer);
+            }
+        }
+        .right_side{
+            @include _main($display:flex ,  $just_content:end , $align_it:center );
+       ul{
+        @include _main($display:flex , $align_it:center, $margin:0px);
+        flex-direction: row;
+        list-style-type: none;
+        gap: 15px;
+        li{
+            @include _main($display:flex , $align_it:center , $cursor:pointer );
+            a{
+                @include _main($f_size:17px , $color:black , $position:relative , );
+                text-decoration: none;
+                &:hover{
+                    border-bottom: 1px solid black;
+                }
+            }
+        }
+        #click_list{
+            position: relative;
+            .list{
+               
+                @include _main($border-radius: 14px, $padding: 10px 10px 10px 33px, $position:absolute , $top:36px, $left:-153px , $back-color:black , $color:white , $display:none);
+                            #list_nav{ 
+                          
+                @include _main( $back-color:black , $color:white , $display:flex , $align_it:center , $just_content:end);
+                gap: 14px;
+               list-style-type: none;
+               flex-direction: column;
+              li{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    border-bottom: 1px solid transparent;
+                    &:hover{
+                        border-bottom: 1px solid white;
+                    }
+                }
+              }
+            }  
+        }      
+        .active{
+            display: block;
+        }
+            }
+       }  
+       .sea_join{
+        @include _main($display:flex ,  $align_it:center , $margin:0 0 0 15px );
+        gap: 15px;
+        #search{
+            @include _main($border-radius: 33px, $padding: 6px 12px 6px 12px ,$border:1px solid transparent, $display:inline-block , $color:black , $back-color:rgb(215, 215, 215) , );
+        text-decoration: none;
+        }
+        #join{
+            @include _main($border-radius: 33px, $padding: 6px 17px 6px 17px ,$border:1px solid transparent, $display:inline-block , $color:white , $back-color:black  );
+            text-decoration: none;
+            transition: .3s ease-in-out;
+            &:hover{
+                background-color: blue;
+            }
+        }
+       }
+        }
+    }
+    @media (max-width: 1000px) {
+        display: none;
+      }
+}
+
+#nav2 {
+    display: none;
+    .nav_side {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      .img {
+        width: 12%;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .sea_join{
+        @include _main($display:flex ,  $align_it:center , $margin:0 0 0 15px );
+        gap: 15px;
+        #search{
+            @include _main($border-radius: 33px, $padding: 6px 12px 6px 12px ,$border:1px solid transparent, $display:inline-block , $color:black , $back-color:rgb(215, 215, 215) , );
+        text-decoration: none;
+        }
+
+       }
+        .click_x{
+            position: relative;
+            transition: .3s ease-in-out;
+            display: flex;
+            gap: 10px;
+        flex-direction: column;
+            span{
+                
+                width: 30px;
+                height: 2px;
+                background-color: black;
+            }
+            #first{
+                transition: .3s ease-in-out;
+            }
+            #third{
+                transition: .3s ease-in-out;
+            }
+            #second{
+   
+                transition: .3s ease-in-out;
+            }
+            .list{
+                z-index: 1212;
+              display: none;
+                @include _main($border-radius: 14px, $padding: 10px 39px 14px 33px, $position:absolute , $top:42px, $left:-152px , $back-color:black , $color:white , );
+                            ul{
+                @include _main( $back-color:black , $color:white , $display:flex ,  $margin:0px , $padding:0px);
+                gap: 14px;
+               list-style-type: none;
+               flex-direction: column;
+              li{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    border-bottom: 1px solid transparent;
+                    &:hover{
+                        border-bottom: 1px solid white;
+                    }
+                }
+              }
+            }  
+        }  
+        }
+        .active .list{
+            display: block;
+        }
+        .active #first{
+            transform: translate(0px, 17px) rotate(45deg);
+
+        }
+        .active #second{
+          opacity: 0;
+
+        }
+        .active #third{
+            transform: translate(0px, -7px) rotate(-45deg);
+        }
+    }
+
+    @media (max-width: 1000px) {
+      display: block;
+    }
+  }
